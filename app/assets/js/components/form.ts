@@ -28,11 +28,9 @@ for (let form of forms) {
             }
 
             const toggle = () => {
-                if (checkbox.checked) {
-                    body.style.display = "block";
-                } else {
-                    body.style.display = "none";
-                }
+                body.style.display = checkbox.checked
+                    ? "block"
+                    : "none";
             }
 
             toggle();
